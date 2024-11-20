@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de Photos Interactive</title>
+    <link rel="stylesheet" href="css/galerie.css">
+    <script src="js/galerie.js" defer></script>
+</head>
+<body onload="initializeGallery()">
+    <header>
+        <h1>Galerie de Photos Interactive et Accessible</h1>
+        <p>Survolez ou utilisez Tab pour naviguer entre les images et voir leur description.</p>
+    </header>
+
+    <div id="image" role="img" aria-label="Aucune image sélectionnée">
+        Passez la souris ou utilisez le clavier pour afficher ici.
+    </div>
+
+    <section id="galerie">
+        <!-- Image 1 -->
+        <figure>
+            <img src="images/image1.jpg" alt="Description de la première image" tabindex="0" onfocus="upDate(this)" onblur="unDo()" onmouseover="upDate(this)" onmouseout="unDo()">
+            <figcaption>Première image : Paysage naturel</figcaption>
+        </figure>
+        <!-- Image 2 -->
+        <figure>
+            <img src="images/image2.jpg" alt="Description de la deuxième image" tabindex="1" onfocus="upDate(this)" onblur="unDo()" onmouseover="upDate(this)" onmouseout="unDo()">
+            <figcaption>Deuxième image : Montagne enneigée</figcaption>
+        </figure>
+        <!-- Image 3 -->
+        <figure>
+            <img src="images/image3.jpg" alt="Description de la troisième image" tabindex="2" onfocus="upDate(this)" onblur="unDo()" onmouseover="upDate(this)" onmouseout="unDo()">
+            <figcaption>Troisième image : Ville moderne</figcaption>
+        </figure>
+        <!-- Image 4 -->
+        <figure>
+            <img src="images/image4.jpg" alt="Description de la quatrième image" tabindex="3" onfocus="upDate(this)" onblur="unDo()" onmouseover="upDate(this)" onmouseout="unDo()">
+            <figcaption>Quatrième image : Plage ensoleillée</figcaption>
+        </figure>
+        <!-- Image 5 -->
+        <figure>
+            <img src="images/image5.jpg" alt="Description de la cinquième image" tabindex="4" onfocus="upDate(this)" onblur="unDo()" onmouseover="upDate(this)" onmouseout="unDo()">
+            <figcaption>Cinquième image : Forêt verdoyante</figcaption>
+        </figure>
+        <!-- Image 6 -->
+        <figure>
+            <img src="images/image6.jpg" alt="Description de la sixième image" tabindex="5" onfocus="upDate(this)" onblur="unDo()" onmouseover="upDate(this)" onmouseout="unDo()">
+            <figcaption>Sixième image : Coucher de soleil</figcaption>
+        </figure>
+    </section>
+</body>
+</html>
